@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <link rel="stylesheet" href="./dist/css/utilities.css">
+  <link rel="stylesheet" href="./dist/css/index.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Ashish Pimpre | Portfolio</title>
+</head>
+
+<body id="home">
+  <header>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="main-nav">
+          <div class="main-logo"><a href="#home">Ashish Pimpre</a></div>
+          <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
+            <li><a href="#skills"><i class="fas fa-laptop-code"></i>Skills</a></li>
+            <li><a href="#qual"><i class="fas fa-graduation-cap"></i>Qualification</a></li>
+            <li><a href="#contact"><i class="fas fa-user"></i>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About section -->
+  <section id="about" class="about-section flex container space-btw-sections">
+    <div class="flex">
+      <div class="column">
+        <p>Hey There 👋, I am<br><span>Ashish Pimpre</span>.</p>
+        <p>I love working on the Front End.</p>
+        <br>
+        <a href="" class="btn-primary"><i class="fas fa-cloud-download-alt"></i> Download Resume</a>
+      </div>
+      <div class="column">
+        <img src="./dist/images/mainimage.png" alt="">
+      </div>
+    </div>
+    <div class="social">
+      <a href="" class="social-logo"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="" class="social-logo"><i class="fab fa-github fa-2x"></i></a>
+      <a href="" class="social-logo"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href="mailto: ashishpimpre2002@gmail.com" class="social-logo"><i class="fab fa-google fa-2x"></i></a>
+      <a href="" class="social-logo"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="" class="social-logo"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <div><a href="#projects"><i class="fas fa-chevron-down fa-2x"></i></a></div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section container space-btw-sections">
+    <div class="dash"></div>
+    <div class="section-heading">
+      <h1>Projects</h1>
+    </div>
+    <div class="projects">
+      <div class="project-card flex">
+        <div class="project-info column">
+          <div class="project-title">My Project One</div>
+          <div class="project-links">
+            <a href="" class="tag"><i class="fas fa-globe"></i> Preview</a>
+            <a href="" class="tag"><i class="fab fa-github"></i> Github</a>
+          </div>
+          <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat ratione ea
+            obcaecati tenetur quam, odio veniam eos maiores, officia modi adipisci, itaque sint. Cumque totam omnis unde
+            assumenda nostrum?</p>
+          <div class="project-tech">
+            <span class="tag">Reactjs</span>
+            <span class="tag">Nodejs</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Healthcare</span>
+          </div>
+        </div>
+        <img class="project-image column" src="./dist/images/proj1.png" alt="">
+      </div>
+      <div class="project-card flex">
+        <div class="project-info column">
+          <div class="project-title">My Project Two</div>
+          <div class="project-links">
+            <a href="" class="tag"><i class="fas fa-globe"></i> Preview</a>
+            <a href="" class="tag"><i class="fab fa-github"></i> Github</a>
+          </div>
+          <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat ratione ea
+            obcaecati tenetur quam, odio veniam eos maiores, officia modi adipisci, itaque sint. Cumque totam omnis unde
+            assumenda nostrum?</p>
+          <div class="project-tech">
+            <span class="tag">Reactjs</span>
+            <span class="tag">Nodejs</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Healthcare</span>
+            <span class="tag">Reactjs</span>
+            <span class="tag">Nodejs</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Healthcare</span>
+          </div>
+        </div>
+        <img class="project-image column" src="./dist/images/proj2.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section container space-btw-sections">
+    <div class="dash"></div>
+    <div class="section-heading">
+      <h1>Skills</h1>
+    </div>
+    <div class="skills-wrap">
+      <div class="skills">
+        <div class="skills-title">
+          Frontend
+        </div>
+        <div class="skills-list">
+          <div class="skills-card">
+            <i class="devicon-react-original colored"></i>
+            <div class="skill-name">ReactJS</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-html5-plain colored"></i>
+            <div class="skill-name">HTML</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-css3-plain colored"></i>
+            <div class="skill-name">CSS</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-sass-original colored"></i>
+            <div class="skill-name">SaSS</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <div class="skill-name">Javascript</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-bootstrap-plain colored"></i>
+            <div class="skill-name">Bootstrap</div>
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="skills-title">
+          Backend
+        </div>
+        <div class="skills-list">
+          <div class="skills-card">
+            <i class="devicon-nodejs-plain colored"></i>
+            <div class="skill-name">NodeJS</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-mongodb-plain colored"></i>
+            <div class="skill-name">MongoDB</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-java-plain colored"></i>
+            <div class="skill-name">Java</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualification section -->
+  <section id="qual" class="qual-section container space-btw-sections">
+    <div class="dash"></div>
+    <div class="section-heading">
+      <h1>Qualification</h1>
+    </div>
+    <div class="qual-wrap">
+      <div class="qual-content flex">
+        <div class="qual-year">2017</div>
+        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
+        <div class="qual-info">
+          <span class="qual-title">Secondary Education</span>
+          <span class="qual-uni">Mother Mary's English High School</span>
+        </div>
+      </div>
+      <div class="qual-content flex">
+        <div class="qual-year">2017 - 2019</div>
+        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
+        <div class="qual-info">
+          <span class="qual-title">Higher Secondary Education</span>
+          <span class="qual-uni">Computer Science - Utkarsha Mahavidyalaya</span>
+        </div>
+      </div>
+      <div class="qual-content flex">
+        <div class="qual-year">2019 - 2020</div>
+        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
+        <div class="qual-info">
+          <span class="qual-title">Complete Web Developer Bootcamp</span>
+          <span class="qual-uni">Udemy, Instructor - Colt Steele</span>
+        </div>
+      </div>
+      <div class="qual-content flex">
+        <div class="qual-year">2019 - 2022</div>
+        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
+        <div class="qual-info">
+          <span class="qual-title">Bachelor of Science in Information Technology</span>
+          <span class="qual-uni">Mumbai University</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section container space-btw-sections">
+    <div class="dash"></div>
+    <div class="section-heading">
+      <h1>Contact</h1>
+    </div>
+    <form "https://formsubmit.co/ashishpimpre2002@gmail.com" method="POST">
+      <!-- <div class="form">
+        <div>
+          <input type="text" name="name" id="name" placeholder="Full name" required="required" maxlength="40">
+        </div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="Your e-mail" required="required" maxlength="50">
+        </div>
+        <div>
+          <input type="text" name="_subject" placeholder="Subject" required="required" maxlength="200">
+        </div>
+        <div>
+          <textarea name="message" id="message" maxlength="3000" placeholder="Your message"
+            required="required"></textarea>
+        </div>
+        <div>
+          <input type="hidden" name="_next" value="./formsuccess.html">
+        </div>
+      </div>
+      <div class="form-btn">
+        <button class="btn-primary" type="submit" name="submit">Send Message</button>
+      </div> -->
+
+      <input type="text" name="name" required>
+      <input type="email" name="email" required>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+
+</html>
