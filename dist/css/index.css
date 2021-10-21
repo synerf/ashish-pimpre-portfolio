@@ -214,17 +214,17 @@ img {
 }
 
 /* Contact section */
-.contact-section .form {
+.contact-section .form-elements {
   max-width: 700px;
   margin: 20px auto 10px auto;
 }
 
-.form div {
+.form-elements div {
   padding: 10px;
 }
 
-.form input,
-.form textarea {
+.form-elements input,
+.form-elements textarea {
   width: 100%;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -235,13 +235,13 @@ img {
   height: 40px;
 }
 
-.form input:focus,
-.form textarea:focus {
+.form-elements input:focus,
+.form-elements textarea:focus {
   outline: 1px solid var(--primary-color);
   border: none;
 }
 
-.form textarea {
+.form-elements textarea {
   min-height: 200px;
 }
 
@@ -250,5 +250,43 @@ img {
 }
 
 .form-btn.btn-primary {
-  background:palegreen;
+  background: palegreen;
+}
+
+.thankyou_message {
+  margin: auto;
+  text-align: center;
+  display: none;
+  background: none;
+  border: 8px solid var(--primary-color);
+  border-radius: 40px;
+  width: 400px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.thankyou_message h1 {
+  margin-bottom: 20px;
+}
+
+.thankyou_message i {
+  color: green;
+}
+
+.btn-animation {
+  transition: none;
+  background: #fff;
+  color: #84df64;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  100% {transform: rotate(360deg);}
+}
+
+.btn-animation:hover {
+  transition: none;
+  background: #fff;
 }

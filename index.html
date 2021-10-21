@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./dist/css/index.css">
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <title>Ashish Pimpre | Portfolio</title>
 </head>
 
@@ -217,8 +218,10 @@
     <div class="section-heading">
       <h1>Contact</h1>
     </div>
-    <form "https://formsubmit.co/ashishpimpre2002@gmail.com" method="POST">
-      <!-- <div class="form">
+    <form class="gform pure-form pure-form-stacked"
+      action="https://script.google.com/macros/s/AKfycbyT5j6RGTtyzHZHuounivwYWabyPRFGl3Ih-8hsFKMqGmm99K-CWN4v7xSaEqH_bVqjlA/exec"
+      method="POST" data-email="ashishpimpre2002@gmail.com">
+      <div class="form-elements">
         <div>
           <input type="text" name="name" id="name" placeholder="Full name" required="required" maxlength="40">
         </div>
@@ -226,25 +229,28 @@
           <input type="email" name="email" id="email" placeholder="Your e-mail" required="required" maxlength="50">
         </div>
         <div>
-          <input type="text" name="_subject" placeholder="Subject" required="required" maxlength="200">
+          <input type="text" name="subject" id="subject" placeholder="Subject" required="required" maxlength="200">
         </div>
         <div>
           <textarea name="message" id="message" maxlength="3000" placeholder="Your message"
             required="required"></textarea>
         </div>
-        <div>
-          <input type="hidden" name="_next" value="./formsuccess.html">
+        <div class="form-btn">
+          <button onclick="changeFormSubmitBtn()" class="btn-primary" id="form-submit-btn" type="submit">Send
+            Message</button>
         </div>
       </div>
-      <div class="form-btn">
-        <button class="btn-primary" type="submit" name="submit">Send Message</button>
-      </div> -->
-
-      <input type="text" name="name" required>
-      <input type="email" name="email" required>
-      <button type="submit">Send</button>
+      <!-- Thankyou_message -->
+      <br>
+      <div class="thankyou_message">
+        <br><br>
+        <h1>Form Submitted</h1>
+        <i class="far fa-check-circle fa-2x"></i>
+      </div>
     </form>
   </section>
+
+  <script src="./dist/js/index.js" data-cfasync="false"></script>
 </body>
 
 </html>
