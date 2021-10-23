@@ -290,3 +290,50 @@ img {
   transition: none;
   background: #fff;
 }
+
+/* Footer */
+.footer {
+  color: #fff;
+  padding: 22px 0;
+  text-align: center;
+  min-height: 118px;
+  background-color: #007acc;
+  font-size: 14px;
+}
+
+.footer-logo {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.copyright p {
+  font-size: 16px;
+}
+
+.footer .social {
+  margin: 20px 0;
+}
+
+.footer .social-logo .fa-instagram {
+  color: #fccc63;
+}
+
+.footer .social-logo .fa-github {
+  color: #6cc644;
+}
+
+.footer .social-logo .fa-linkedin-in {
+  color: #caccce;
+}
+
+.footer .social-logo .fa-google {
+  color: #3cba54;
+}
+
+.footer .social-logo .fa-facebook {
+  color: #d8dfea;
+}
+
+.footer .social-logo .fa-twitter {
+  color: #1dcaff;
+}
