@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <link rel="stylesheet" href="./css/utilities.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/media.css">
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -17,12 +18,14 @@
 
 <body id="home">
   <header>
-    <!-- Navbar -->
-    <nav id="navbar">
+    <nav>
       <div class="container">
-        <div class="main-nav">
-          <div class="main-logo"><a href="#home">Ashish Pimpre</a></div>
-          <ul class="nav-links">
+        <div class="main-logo">
+          <a href="#home">Ashish Pimpre</a>
+        </div>
+
+        <div class="links">
+          <ul>
             <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
             <li><a href="#skills"><i class="fas fa-laptop-code"></i>Skills</a></li>
@@ -30,13 +33,17 @@
             <li><a href="#contact"><i class="fas fa-user"></i>Contact</a></li>
           </ul>
         </div>
+
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
       </div>
     </nav>
   </header>
 
   <!-- About section -->
   <section id="about" class="about-section flex container space-btw-sections">
-    <div class="flex">
+    <div class="flex about-head">
       <div class="column">
         <p>Hey There 👋, I am<br><span>Ashish Pimpre</span>.</p>
         <p>I love working on the Front End.</p>
@@ -55,7 +62,9 @@
       <a href="" class="social-logo"><i class="fab fa-facebook fa-2x"></i></a>
       <a href="" class="social-logo"><i class="fab fa-twitter fa-2x"></i></a>
     </div>
-    <div><a href="#projects"><i class="fas fa-chevron-down fa-2x"></i></a></div>
+    <div>
+      <a href="#projects"><i class="fas fa-chevron-down fa-2x"></i></a>
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -148,6 +157,7 @@
           </div>
         </div>
       </div>
+      <div class="skill-sep"></div>
       <div class="skills">
         <div class="skills-title">
           Backend
@@ -176,40 +186,85 @@
     <div class="section-heading">
       <h1>Qualification</h1>
     </div>
-    <div class="qual-wrap">
-      <div class="qual-content flex">
-        <div class="qual-year">2017</div>
-        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
-        <div class="qual-info">
-          <span class="qual-title">Secondary Education</span>
-          <span class="qual-uni">Mother Mary's English High School</span>
+
+    <div class="education__container bd-grid">
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2017</h3>
+          <div class="education__university">Maharashtra Board</div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">Secondary Education</h3>
+          <div class="education__specialty"></div>
         </div>
       </div>
-      <div class="qual-content flex">
-        <div class="qual-year">2017 - 2019</div>
-        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
-        <div class="qual-info">
-          <span class="qual-title">Higher Secondary Education</span>
-          <span class="qual-uni">Computer Science - Utkarsha Mahavidyalaya</span>
+
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2017 - 2019</h3>
+          <div class="education__university">
+            Maharashtra Board
+          </div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">Higher Secondary Education</h3>
+          <div class="education__specialty">Computer Science</div>
         </div>
       </div>
-      <div class="qual-content flex">
-        <div class="qual-year">2019 - 2020</div>
-        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
-        <div class="qual-info">
-          <span class="qual-title">Complete Web Developer Bootcamp</span>
-          <span class="qual-uni">Udemy, Instructor - Colt Steele</span>
+
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2019 - 2020</h3>
+          <div class="education__university">
+            Udemy
+          </div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">Complete Web Developer Bootcamp</h3>
+          <div class="education__specialty">Udemy, Instructor - Colt Steele</div>
         </div>
       </div>
-      <div class="qual-content flex">
-        <div class="qual-year">2019 - 2022</div>
-        <div class="separater"><i class="fas fa-ellipsis-v"></i></div>
-        <div class="qual-info">
-          <span class="qual-title">Bachelor of Science in Information Technology</span>
-          <span class="qual-uni">Mumbai University</span>
+
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2019 - 2022</h3>
+          <div class="education__university">
+            Mumbai University
+          </div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">Bachelor of Science in Information Technology</h3>
+          <div class="education__specialty">BScIT</div>
         </div>
       </div>
     </div>
+
+
+
   </section>
 
   <!-- Contact -->

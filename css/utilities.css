@@ -4,6 +4,11 @@
   padding: 0 36px;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -13,6 +18,13 @@
 
 .column {
   flex: 1;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
 }
 
 /* buttons */
@@ -79,6 +91,13 @@
   border: 3px solid #0044ff;
   border-radius: 5px;
   margin: 16px 0;
+}
+
+/* skill sep */
+.skill-sep {
+  border: 1px solid #add8e6;
+  width: 60%;
+  margin: auto;
 }
 
 /* section heading */

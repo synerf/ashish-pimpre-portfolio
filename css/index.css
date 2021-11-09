@@ -3,6 +3,16 @@
 /* Variables */
 :root {
   --primary-color: #0000ff;
+
+  --dark-one: #333;
+  --dark-two: #7a7a7a;
+  --main-color: #784cfb;
+  --light-one: #fff;
+  --light-two: #f9fafb;
+  --light-three: #f6f7fb;
+
+
+
 }
 
 /* Reset */
@@ -30,7 +40,7 @@ img {
 }
 
 /* Navbar */
-#navbar {
+nav {
   background: #fff;
   position: fixed;
   top: 0;
@@ -38,39 +48,99 @@ img {
   z-index: 2;
 }
 
-#navbar .main-nav {
+nav .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 70px;
+  align-items: center;
 }
 
-#navbar .main-logo a {
+nav .main-logo a {
   color: var(--primary-color);
   font-size: 36px;
   font-weight: 800;
 }
 
-#navbar .nav-links {
+.links ul {
   display: flex;
   font-size: 18px;
   font-weight: 600;
 }
 
-#navbar .nav-links li {
-  margin-right: 30px;
+.links a {
+  display: inline-block;
+  padding: 14px 18px;
+  color: var(--dark-one);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1;
+  transition: 0.3s;
 }
 
-#navbar .nav-links li a:hover {
-  color: var(--primary-color);
-}
-
-#navbar .nav-links li:last-child {
-  margin-right: 0;
-}
-
-#navbar .nav-links li i {
+.links a i {
   margin-right: 4px;
+}
+
+.links a:hover {
+  color: var(--main-color);
+}
+
+.hamburger-menu {
+  width: 2.7rem;
+  height: 3rem;
+  z-index: 100;
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hamburger-menu .bar {
+  position: relative;
+  width: 2.1rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--dark-one);
+  transition: 0.5s;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  position: absolute;
+  width: 2.1rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--dark-one);
+  transition: 0.5s;
+}
+
+.bar:before {
+  transform: translateY(-9px);
+}
+
+.bar:after {
+  transform: translateY(9px);
+}
+
+nav.open .hamburger-menu .bar {
+  background-color: transparent;
+  transform: rotate(360deg);
+}
+
+nav.open .hamburger-menu .bar:before {
+  transform: translateY(0) rotate(45deg);
+  background-color: var(--light-one);
+}
+
+nav.open .hamburger-menu .bar:after {
+  transform: translateY(0) rotate(-45deg);
+  background-color: var(--light-one);
+}
+
+nav.open .links {
+  transform: translateX(0);
 }
 
 /* About section */
@@ -140,17 +210,18 @@ img {
 .skills-section .skills {
   margin: 20px 0;
   display: flex;
-  justify-content: space-between;
 }
 
 .skills-section .skills-title {
   font-size: 24px;
   font-weight: 600;
+  align-self: center;
 }
 
 .skills-section .skills-list {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .skills-section .skills-list i {
@@ -172,45 +243,64 @@ img {
 }
 
 /* Qualification section */
-.qual-section .qual-wrap {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 0;
+.education__container {
+  row-gap: 3rem;
+  margin: 40px 20px;
 }
 
-.qual-section .qual-content {
-  margin: 20px 0;
-  position: relative;
+.education__content {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
 }
 
-.qual-year {
-  flex: 1;
-  text-align: end;
-  font-size: 24px;
-  font-weight: 600;
+.education__year,
+.education__race {
+  font-size: 20px;
+  margin-bottom: 0.25rem;
 }
 
-.separater {
-  flex: 0;
-  padding: 0 40px;
-  font-size: 30px;
-  color: var(--primary-color);
-}
-
-.qual-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.qual-title {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.qual-uni {
+.education__university,
+.education__specialty {
+  display: block;
+  font-size: 14px;
   color: #888;
+}
+
+.education__year,
+.education__university {
+  text-align: right;
+}
+
+.education__time {
+  padding: 0 2rem;
+  justify-self: center;
+}
+
+.education__rounder {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #007acc;
+  border-radius: 50%;
+}
+
+.education__rounder::before {
+  content: "";
+  position: absolute;
+  transform: translate(-5px, -5px);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #007acc;
+  border-radius: 50%;
+}
+
+.education__line {
+  display: block;
+  height: 90%;
+  width: 2px;
+  background-color: #007acc;
+  transform: translate(5px, 0px);
 }
 
 /* Contact section */
