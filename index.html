@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-  <link rel="stylesheet" href="./css/utilities.css">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <link rel="stylesheet" href="./css/utilities.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/media.css" />
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -26,11 +26,21 @@
 
         <div class="links">
           <ul>
-            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a></li>
-            <li><a href="#skills"><i class="fas fa-laptop-code"></i>Skills</a></li>
-            <li><a href="#qual"><i class="fas fa-graduation-cap"></i>Qualification</a></li>
-            <li><a href="#contact"><i class="fas fa-user"></i>Contact</a></li>
+            <li>
+              <a href="#home"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+            </li>
+            <li>
+              <a href="#skills"><i class="fas fa-laptop-code"></i>Skills</a>
+            </li>
+            <li>
+              <a href="#qual"><i class="fas fa-graduation-cap"></i>Qualification</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="fas fa-user"></i>Contact</a>
+            </li>
           </ul>
         </div>
 
@@ -42,18 +52,17 @@
   </header>
 
   <!-- About section -->
-  <section id="about" class="about-section flex container ">
+  <section id="about" class="about-section flex container">
     <div class="about-head flex">
       <div class="column">
-        <p>Hey There 👋, I am<br><span>Ashish Pimpre</span>.</p>
-        <p>I love working on the Front End.</p>
-        <br>
-        <a href="https://synerf.github.io/ashish-pimpre-portfolio/Ashish_Pimpre_Resume.pdf" download
-          class="btn-primary"><i class="fas fa-cloud-download-alt"></i>
-          Download Resume</a>
+        <p>Hey There 👋, I am<br /><span>Ashish Pimpre</span>.</p>
+        <p>I love working on Android technologies.</p>
+        <br />
+        <a href="https://synerf.github.io/ashish-pimpre-portfolio/Ashish_Pimpre_Resume_2022.pdf" download
+          class="btn-primary"><i class="fas fa-cloud-download-alt"></i> Download Resume</a>
       </div>
       <div class="column">
-        <img src="./images/mainimage.png" alt="">
+        <img src="./images/mainimage.png" alt="" />
       </div>
     </div>
     <div class="social">
@@ -80,45 +89,66 @@
     <div class="projects">
       <div class="project-card flex">
         <div class="project-info column">
-          <div class="project-title">My Project One</div>
+          <div class="project-title">PreTask</div>
           <div class="project-links">
-            <a href="" class="tag"><i class="fas fa-globe"></i> Preview</a>
-            <a href="" class="tag"><i class="fab fa-github"></i> Github</a>
+            <a class="tag"><i class="fas fa-globe"></i> Preview</a>
+            <a href="https://github.com/synerf/PreTask" target="_blank" class="tag"><i class="fab fa-github"></i>
+              Github</a>
           </div>
-          <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat ratione ea
-            obcaecati tenetur quam, odio veniam eos maiores, officia modi adipisci, itaque sint. Cumque totam omnis unde
-            assumenda nostrum?</p>
+          <p class="project-desc">
+            PreTask is a project planner app that allows an enterprise to plan their project's work within a team.
+            <br>
+            Allows user to register / login with email. User can create task boards and cards to monitor work to be done
+          </p>
           <div class="project-tech">
-            <span class="tag">Reactjs</span>
-            <span class="tag">Nodejs</span>
+            <span class="tag">Android</span>
+            <span class="tag">Kotlin</span>
             <span class="tag">Firebase</span>
-            <span class="tag">Healthcare</span>
+            <span class="tag">Glide</span>
           </div>
         </div>
-        <img class="project-image column" src="./images/proj1.png" alt="">
+        <img class="project-image column" src="./images/pretask-poster.png" alt="" />
       </div>
       <div class="project-card flex">
         <div class="project-info column">
-          <div class="project-title">My Project Two</div>
+          <div class="project-title">WeatherCast</div>
           <div class="project-links">
-            <a href="" class="tag"><i class="fas fa-globe"></i> Preview</a>
-            <a href="" class="tag"><i class="fab fa-github"></i> Github</a>
+            <a class="tag"><i class="fas fa-globe"></i> Preview</a>
+            <a href="https://github.com/synerf/WeatherCast" target="_blank" class="tag"><i class="fab fa-github"></i>
+              Github</a>
           </div>
-          <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat ratione ea
-            obcaecati tenetur quam, odio veniam eos maiores, officia modi adipisci, itaque sint. Cumque totam omnis unde
-            assumenda nostrum?</p>
+          <p class="project-desc">
+            Weather Cast fetches weather data from OpenWeatherMap API based on user's current location.<br>
+            Handles UI as per retrieved weather data.
+          </p>
           <div class="project-tech">
-            <span class="tag">Reactjs</span>
-            <span class="tag">Nodejs</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Healthcare</span>
-            <span class="tag">Reactjs</span>
-            <span class="tag">Nodejs</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Healthcare</span>
+            <span class="tag">Android</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">OpenWeatherMap API</span>
+            <span class="tag">Retrofit</span>
           </div>
         </div>
-        <img class="project-image column" src="./images/proj2.png" alt="">
+        <img class="project-image column" src="./images/weathercast-poster.png" alt="" />
+      </div>
+      <div class="project-card flex">
+        <div class="project-info column">
+          <div class="project-title">Saitejrex</div>
+          <div class="project-links">
+            <a href="https://saitejrex.herokuapp.com" target="_blank" class="tag"><i class="fas fa-globe"></i>
+              Preview</a>
+            <a class="tag"><i class="fab fa-github"></i> Github</a>
+          </div>
+          <p class="project-desc">
+            Developed and maintained a full fledged blog website.<br>
+            Brought into use the CRUD operations.
+          </p>
+          <div class="project-tech">
+            <span class="tag">Nodejs</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <img class="project-image column" src="./images/saitejrex-poster.png" alt="" />
       </div>
     </div>
   </section>
@@ -131,10 +161,12 @@
     </div>
     <div class="skills-wrap">
       <div class="skills">
-        <div class="skills-title">
-          Languages
-        </div>
+        <div class="skills-title">Languages</div>
         <div class="skills-list">
+          <div class="skills-card">
+            <i class="devicon-kotlin-plain colored"></i>
+            <div class="skill-name">Kotlin</div>
+          </div>
           <div class="skills-card">
             <i class="devicon-javascript-plain colored"></i>
             <div class="skill-name">Javascript</div>
@@ -151,9 +183,7 @@
       </div>
       <div class="skill-sep"></div>
       <div class="skills">
-        <div class="skills-title">
-          Frontend
-        </div>
+        <div class="skills-title">Frontend</div>
         <div class="skills-list">
           <div class="skills-card">
             <i class="devicon-html5-plain colored"></i>
@@ -179,9 +209,7 @@
       </div>
       <div class="skill-sep"></div>
       <div class="skills">
-        <div class="skills-title">
-          Backend
-        </div>
+        <div class="skills-title">Backend</div>
         <div class="skills-list">
           <div class="skills-card">
             <i class="devicon-nodejs-plain colored"></i>
@@ -190,6 +218,10 @@
           <div class="skills-card">
             <i class="devicon-mongodb-plain colored"></i>
             <div class="skill-name">MongoDB</div>
+          </div>
+          <div class="skills-card">
+            <i class="devicon-firebase-plain colored"></i>
+            <div class="skill-name">Firebase</div>
           </div>
         </div>
       </div>
@@ -204,6 +236,62 @@
     </div>
 
     <div class="education__container bd-grid">
+
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2019 - 2022</h3>
+          <div class="education__university">Mumbai University</div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">
+            Bachelor of Science in Information Technology
+          </h3>
+          <div class="education__specialty">BScIT</div>
+        </div>
+      </div>
+
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2019 - 2020</h3>
+          <div class="education__university">Udemy</div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">The Complete Android 12 & Kotlin Development Masterclass</h3>
+          <div class="education__specialty">
+            Udemy, Instructor - Denis Panjuta
+          </div>
+        </div>
+      </div>
+
+      <div class="education__content">
+        <div>
+          <h3 class="education__year">2017 - 2019</h3>
+          <div class="education__university">Maharashtra Board</div>
+        </div>
+
+        <div class="education__time">
+          <span class="education__rounder"></span>
+          <span class="education__line"></span>
+        </div>
+
+        <div>
+          <h3 class="education__race">Higher Secondary Education</h3>
+          <div class="education__specialty">Computer Science</div>
+        </div>
+      </div>
+
       <div class="education__content">
         <div>
           <h3 class="education__year">2017</h3>
@@ -221,66 +309,7 @@
         </div>
       </div>
 
-      <div class="education__content">
-        <div>
-          <h3 class="education__year">2017 - 2019</h3>
-          <div class="education__university">
-            Maharashtra Board
-          </div>
-        </div>
-
-        <div class="education__time">
-          <span class="education__rounder"></span>
-          <span class="education__line"></span>
-        </div>
-
-        <div>
-          <h3 class="education__race">Higher Secondary Education</h3>
-          <div class="education__specialty">Computer Science</div>
-        </div>
-      </div>
-
-      <div class="education__content">
-        <div>
-          <h3 class="education__year">2019 - 2020</h3>
-          <div class="education__university">
-            Udemy
-          </div>
-        </div>
-
-        <div class="education__time">
-          <span class="education__rounder"></span>
-          <span class="education__line"></span>
-        </div>
-
-        <div>
-          <h3 class="education__race">Complete Web Developer Bootcamp</h3>
-          <div class="education__specialty">Udemy, Instructor - Colt Steele</div>
-        </div>
-      </div>
-
-      <div class="education__content">
-        <div>
-          <h3 class="education__year">2019 - 2022</h3>
-          <div class="education__university">
-            Mumbai University
-          </div>
-        </div>
-
-        <div class="education__time">
-          <span class="education__rounder"></span>
-          <span class="education__line"></span>
-        </div>
-
-        <div>
-          <h3 class="education__race">Bachelor of Science in Information Technology</h3>
-          <div class="education__specialty">BScIT</div>
-        </div>
-      </div>
     </div>
-
-
-
   </section>
 
   <!-- Contact -->
@@ -294,27 +323,28 @@
       method="POST" data-email="ashishpimpre2002@gmail.com">
       <div class="form-elements">
         <div>
-          <input type="text" name="name" id="name" placeholder="Full name" required="required" maxlength="40">
+          <input type="text" name="name" id="name" placeholder="Full name" required="required" maxlength="40" />
         </div>
         <div>
-          <input type="email" name="email" id="email" placeholder="Your e-mail" required="required" maxlength="50">
+          <input type="email" name="email" id="email" placeholder="Your e-mail" required="required" maxlength="50" />
         </div>
         <div>
-          <input type="text" name="subject" id="subject" placeholder="Subject" required="required" maxlength="200">
+          <input type="text" name="subject" id="subject" placeholder="Subject" required="required" maxlength="200" />
         </div>
         <div>
           <textarea name="message" id="message" maxlength="3000" placeholder="Your message"
             required="required"></textarea>
         </div>
         <div class="form-btn">
-          <button onclick="changeFormSubmitBtn()" class="btn-primary" id="form-submit-btn" type="submit">Send
-            Message</button>
+          <button onclick="changeFormSubmitBtn()" class="btn-primary" id="form-submit-btn" type="submit">
+            Send Message
+          </button>
         </div>
       </div>
       <!-- Thankyou_message -->
-      <br>
+      <br />
       <div class="thankyou_message">
-        <br><br>
+        <br /><br />
         <h1>Form Submitted</h1>
         <i class="far fa-check-circle fa-2x"></i>
       </div>
@@ -337,10 +367,11 @@
             class="fab fa-twitter"></i></a>
       </div>
       <div class="copyright">
-        <p>&copy; 2021, All rights reserved - Ashish Pimpre Portfolio Website</p>
+        <p>
+          &copy; 2021, All rights reserved - Ashish Pimpre Portfolio Website
+        </p>
       </div>
     </div>
-
   </footer>
 
   <script src="./js/index.js" data-cfasync="false"></script>
